@@ -17,7 +17,6 @@
 
 /* Begin PBXFileReference section */
 		1B6FC1EC22EDC025002A27D9 /* Pods-SimpleChainableStackUI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleChainableStackUI_Example.release.xcconfig"; path = "Target Support Files/Pods-SimpleChainableStackUI_Example/Pods-SimpleChainableStackUI_Example.release.xcconfig"; sourceTree = "<group>"; };
-		4063E072E4D87363A51459B8 /* Pods_SimpleChainableStackUI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleChainableStackUI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C88CB4C09D2484F7A066F3A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SimpleChainableStackUI_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleChainableStackUI_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -26,11 +25,9 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		6964DECF68427104D1B985F4 /* Pods-SimpleChainableStackUI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleChainableStackUI_Tests.release.xcconfig"; path = "Target Support Files/Pods-SimpleChainableStackUI_Tests/Pods-SimpleChainableStackUI_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9D6FD551A5EE3E0B59001D2C /* SimpleChainableStackUI.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SimpleChainableStackUI.podspec; path = ../SimpleChainableStackUI.podspec; sourceTree = "<group>"; };
 		9D7E5940CCE2561C4AAAC2D8 /* Pods-SimpleChainableStackUI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleChainableStackUI_Example.debug.xcconfig"; path = "Target Support Files/Pods-SimpleChainableStackUI_Example/Pods-SimpleChainableStackUI_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A3E8E162D0883963806F2385 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		C9F802C63510BDEF135A84C6 /* Pods-SimpleChainableStackUI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleChainableStackUI_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleChainableStackUI_Tests/Pods-SimpleChainableStackUI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F874178221138E2AEAA16F84 /* Pods_SimpleChainableStackUI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleChainableStackUI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -50,7 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				F874178221138E2AEAA16F84 /* Pods_SimpleChainableStackUI_Example.framework */,
-				4063E072E4D87363A51459B8 /* Pods_SimpleChainableStackUI_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,8 +107,6 @@
 			children = (
 				9D7E5940CCE2561C4AAAC2D8 /* Pods-SimpleChainableStackUI_Example.debug.xcconfig */,
 				1B6FC1EC22EDC025002A27D9 /* Pods-SimpleChainableStackUI_Example.release.xcconfig */,
-				C9F802C63510BDEF135A84C6 /* Pods-SimpleChainableStackUI_Tests.debug.xcconfig */,
-				6964DECF68427104D1B985F4 /* Pods-SimpleChainableStackUI_Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";

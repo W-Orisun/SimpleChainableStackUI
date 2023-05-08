@@ -8,10 +8,10 @@
 import Foundation
 import UIKit
 
-extension Optional: Chainable where Wrapped: Chainable {}
+extension Optional : Chainable where Wrapped: Chainable {}
 extension UIView : Chainable {}
 
-extension UIView : UIViewChainable {}
+extension UIView : UIViewChainable, UIViewLayerChainable {}
 extension UILabel : UILabelChainable {}
 extension UIButton : UIButtonChainable {}
 extension UIControl : UIControlChainable {}

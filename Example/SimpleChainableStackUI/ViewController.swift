@@ -19,15 +19,25 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        let label = UILabel()
-            .text("SimpleChainableStackUI")
-            .font(UIFont.systemFont(ofSize: 20))
-            .textColor(.gray)
-            .frame(CGRect(x: 0, y: 0, width: 300, height: 20))
-            .textAlignment(.center)
-            .set(\.shadowColor, to: .black)
-        view.addSubview(label)
-        label.center = view.center
+        let container = ViewContainer {
+            VStack {
+                UILabel()
+                    .text("SimpleChainableStackUI")
+                    .font(UIFont.systemFont(ofSize: 20))
+                    .textColor(.gray)
+                    .textAlignment(.center)
+                    .set(\.shadowColor, to: .black)
+                Spacer()
+                HStack(distribution: .fillEqually) {
+                    UILabel().text("simple").textAlignment(.center)
+                    UILabel().text("chainable").textAlignment(.center)
+                    UILabel().text("stack").textAlignment(.center)
+                }
+            }
+        }.frame(CGRect(x: 0, y: 0, width: 240, height: 48))
+        
+        view.addSubview(container)
+        container.center = view.center
     }
 }
 

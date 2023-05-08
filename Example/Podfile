@@ -4,10 +4,5 @@ platform :ios, '10.0'
 
 target 'SimpleChainableStackUI_Example' do
   pod 'SimpleChainableStackUI', :path => '../'
-
-  target 'SimpleChainableStackUI_Tests' do
-    inherit! :search_paths
-
-    
-  end
+  
 end
