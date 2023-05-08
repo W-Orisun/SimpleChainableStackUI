@@ -10,6 +10,7 @@ import UIKit
 open class Spacer : UIView {
     
     public let spacing: CGFloat
+    var observation: NSKeyValueObservation?
     var axis: NSLayoutConstraint.Axis? {
         didSet {
             translatesAutoresizingMaskIntoConstraints = false
@@ -32,5 +33,13 @@ open class Spacer : UIView {
     
     public required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    public func bindHidden(to view: UIView) -> Self {
+        observation = view.observe(\.isHidden, options: [.initial, .new]) { [weak self] _, change in
+            guard let isHidden = change.newValue else { return }
+            self?.isHidden = isHidden
+        }
+        return self
     }
 }
