@@ -9,30 +9,30 @@
 /* Begin PBXBuildFile section */
 		01FB0370869681EC6C48DFF62F3EAB77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		091841AE79318CC1FC61823666F70FC7 /* SimpleChainableStackUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A585061D629E159A5CE4E2FF8B1BF658 /* SimpleChainableStackUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A3AC05EAC69B376A7FEDFF013A5EC9D /* UILableChainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C21B405D55E0200E19732A685FA964 /* UILableChainable.swift */; };
 		26CB6424C15DA085A08AAFFD3FE3C0AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		324518677435B42F673FBE6369BA9FD6 /* UISliderChainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A245B669295E923BB0E06325795D29D1 /* UISliderChainable.swift */; };
-		4D8CB9D01554C60CFA70958F95D5BBB6 /* UIImageViewChainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2461CCECED517E37C9706863F17C2D7 /* UIImageViewChainable.swift */; };
-		614EAA293145F46296D0B156534CDB1E /* UITextViewChainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA99F6DFAD828B7CCF96B93D6220973 /* UITextViewChainable.swift */; };
+		5E7A50D22A08A2AD00F2D05A /* Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A50C02A08A2AD00F2D05A /* Chainable.swift */; };
+		5E7A50D32A08A2AD00F2D05A /* ChainableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A50C12A08A2AD00F2D05A /* ChainableExtension.swift */; };
+		5E7A50D42A08A2AD00F2D05A /* UIStackViewChainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A50C32A08A2AD00F2D05A /* UIStackViewChainable.swift */; };
+		5E7A50D52A08A2AD00F2D05A /* UICollectionViewChainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A50C42A08A2AD00F2D05A /* UICollectionViewChainable.swift */; };
+		5E7A50D62A08A2AD00F2D05A /* UIControlChainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A50C52A08A2AD00F2D05A /* UIControlChainable.swift */; };
+		5E7A50D72A08A2AD00F2D05A /* UIScrollViewChainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A50C62A08A2AD00F2D05A /* UIScrollViewChainable.swift */; };
+		5E7A50D82A08A2AD00F2D05A /* UIPageControlChainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A50C72A08A2AD00F2D05A /* UIPageControlChainable.swift */; };
+		5E7A50D92A08A2AD00F2D05A /* UIImageViewChainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A50C82A08A2AD00F2D05A /* UIImageViewChainable.swift */; };
+		5E7A50DA2A08A2AD00F2D05A /* UIButtonChainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A50C92A08A2AD00F2D05A /* UIButtonChainable.swift */; };
+		5E7A50DB2A08A2AD00F2D05A /* UILableChainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A50CA2A08A2AD00F2D05A /* UILableChainable.swift */; };
+		5E7A50DC2A08A2AD00F2D05A /* UISwitchChainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A50CB2A08A2AD00F2D05A /* UISwitchChainable.swift */; };
+		5E7A50DD2A08A2AD00F2D05A /* UITextViewChainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A50CC2A08A2AD00F2D05A /* UITextViewChainable.swift */; };
+		5E7A50DE2A08A2AD00F2D05A /* UIStepperChainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A50CD2A08A2AD00F2D05A /* UIStepperChainable.swift */; };
+		5E7A50DF2A08A2AD00F2D05A /* UITextFieldChainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A50CE2A08A2AD00F2D05A /* UITextFieldChainable.swift */; };
+		5E7A50E02A08A2AD00F2D05A /* UISliderChainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A50CF2A08A2AD00F2D05A /* UISliderChainable.swift */; };
+		5E7A50E12A08A2AD00F2D05A /* UIViewChainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A50D02A08A2AD00F2D05A /* UIViewChainable.swift */; };
+		5E7A50E22A08A2AD00F2D05A /* UITableViewChainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A50D12A08A2AD00F2D05A /* UITableViewChainable.swift */; };
 		6E0449F6BA2D1663F2BADB39E120885C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		6E4EF88DA568152FF04D59AFFF9575EB /* UITableViewChainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D1177B2DDBF491DF16472CE3972A95 /* UITableViewChainable.swift */; };
-		6E696D5C9C68083A946F329F5867F470 /* UIControlChainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6266A29AEB284131480FFC1A8BD00174 /* UIControlChainable.swift */; };
 		787066417488614B560422D69C984D0A /* Pods-SimpleChainableStackUI_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFDC5361D27A7FABECDF00EABAF7103 /* Pods-SimpleChainableStackUI_Example-dummy.m */; };
 		7A58856A11CE3127005EBFB75016867E /* Pods-SimpleChainableStackUI_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D17A88CAE11CCBB39E4FC0F491F8CE51 /* Pods-SimpleChainableStackUI_Tests-dummy.m */; };
-		7DBD00E624210F303358977C6872DF37 /* UIPageControlChainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFC320270EBD721EB89CA964C29CC91 /* UIPageControlChainable.swift */; };
-		8B4BDF81BD151535EE819C7D4243CAF1 /* UISwitchChainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8F49F1A0E6AD8FED25078608CB923F /* UISwitchChainable.swift */; };
-		9590A5D658653CBDEF5B106E776C07D3 /* UIStepperChainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87F22A26AF94EE0F23237645C771B2E /* UIStepperChainable.swift */; };
 		A475342E57B4346DC0891969D12BF060 /* SimpleChainableStackUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0FA2CC42608E75E2988107BDA0766E /* SimpleChainableStackUI-dummy.m */; };
-		A4A0EBD808CC838C3096E5A959989842 /* UIStackViewChainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818B90CB718D426E78852A5DD82196BF /* UIStackViewChainable.swift */; };
 		AE95C2D50C335BF46D494CE439E3D6A7 /* Pods-SimpleChainableStackUI_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16A2FEA9119DC87A21328C3B7BE37484 /* Pods-SimpleChainableStackUI_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B7C8943F975308653010FD90F14592E3 /* UIViewChainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B87F28D2C2A6301EFB4C673CB0783A8 /* UIViewChainable.swift */; };
-		B8A4DBA68CBD2006E34193B47C948CA1 /* UIButtonChainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF133BD6E794DE21FA9E8F990A6FA26A /* UIButtonChainable.swift */; };
 		BA03D38A376585EDF5B49F729183A711 /* Pods-SimpleChainableStackUI_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB16908AB3698A3AF898FC584D03BF9F /* Pods-SimpleChainableStackUI_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D9E3360541B7D80C17955723CD755068 /* UIScrollViewChainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6418983DDB604C0C866E0F588DE7E850 /* UIScrollViewChainable.swift */; };
-		E10DE2DC73C48B04981201728BDF1E84 /* UITextFieldChainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 052E140C4EAB85ED5CB15FC2E2340D2A /* UITextFieldChainable.swift */; };
-		E3C3BF0917FDFB26D4CA8A60310A2C46 /* Chainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFCAB8B411419B04260BECB3156C4A0 /* Chainable.swift */; };
-		F450E38F6DADFF595D80976D7D160996 /* UICollectionViewChainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A59347E8B644883C1D1A9A80796316 /* UICollectionViewChainable.swift */; };
-		F7C19E8FB2CF125EFB72ED2472A53580 /* ChainableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C4837B88DC3093D102C322EE45FA3F /* ChainableExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,11 +53,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		052E140C4EAB85ED5CB15FC2E2340D2A /* UITextFieldChainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UITextFieldChainable.swift; sourceTree = "<group>"; };
 		06B2E963FEAAD6FD777614C016B65029 /* Pods-SimpleChainableStackUI_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleChainableStackUI_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		07F78EC596EE79DB6F9B08B36760477E /* Pods-SimpleChainableStackUI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleChainableStackUI_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		0A0FA2CC42608E75E2988107BDA0766E /* SimpleChainableStackUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SimpleChainableStackUI-dummy.m"; sourceTree = "<group>"; };
-		0E9E167860E7253C493FC5C307E8A3F7 /* SimpleChainableStackUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SimpleChainableStackUI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0E9E167860E7253C493FC5C307E8A3F7 /* SimpleChainableStackUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SimpleChainableStackUI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		16A2FEA9119DC87A21328C3B7BE37484 /* Pods-SimpleChainableStackUI_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SimpleChainableStackUI_Example-umbrella.h"; sourceTree = "<group>"; };
 		1AFDC5361D27A7FABECDF00EABAF7103 /* Pods-SimpleChainableStackUI_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SimpleChainableStackUI_Example-dummy.m"; sourceTree = "<group>"; };
 		2584A8170324D881E2DAAE9DC2D68469 /* SimpleChainableStackUI */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SimpleChainableStackUI; path = SimpleChainableStackUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,40 +64,41 @@
 		3BE53DBC0FF6C19609820544D9F9E1C7 /* Pods-SimpleChainableStackUI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleChainableStackUI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3E9CF9A92CD116B249F1409E0F6AA7A2 /* Pods-SimpleChainableStackUI_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SimpleChainableStackUI_Example"; path = Pods_SimpleChainableStackUI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B8ED36D4783C0DC47706AEA48F06BC1 /* Pods-SimpleChainableStackUI_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SimpleChainableStackUI_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4EA99F6DFAD828B7CCF96B93D6220973 /* UITextViewChainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UITextViewChainable.swift; sourceTree = "<group>"; };
-		5668B186B2AA51F7C1145CE976567D0B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		5668B186B2AA51F7C1145CE976567D0B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		56920350ABBEE64B2215EEE26F505FD3 /* SimpleChainableStackUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleChainableStackUI.release.xcconfig; sourceTree = "<group>"; };
-		61D1177B2DDBF491DF16472CE3972A95 /* UITableViewChainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UITableViewChainable.swift; sourceTree = "<group>"; };
-		6266A29AEB284131480FFC1A8BD00174 /* UIControlChainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIControlChainable.swift; sourceTree = "<group>"; };
-		6418983DDB604C0C866E0F588DE7E850 /* UIScrollViewChainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIScrollViewChainable.swift; sourceTree = "<group>"; };
+		5E7A50C02A08A2AD00F2D05A /* Chainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chainable.swift; sourceTree = "<group>"; };
+		5E7A50C12A08A2AD00F2D05A /* ChainableExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainableExtension.swift; sourceTree = "<group>"; };
+		5E7A50C32A08A2AD00F2D05A /* UIStackViewChainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackViewChainable.swift; sourceTree = "<group>"; };
+		5E7A50C42A08A2AD00F2D05A /* UICollectionViewChainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewChainable.swift; sourceTree = "<group>"; };
+		5E7A50C52A08A2AD00F2D05A /* UIControlChainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIControlChainable.swift; sourceTree = "<group>"; };
+		5E7A50C62A08A2AD00F2D05A /* UIScrollViewChainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollViewChainable.swift; sourceTree = "<group>"; };
+		5E7A50C72A08A2AD00F2D05A /* UIPageControlChainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIPageControlChainable.swift; sourceTree = "<group>"; };
+		5E7A50C82A08A2AD00F2D05A /* UIImageViewChainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewChainable.swift; sourceTree = "<group>"; };
+		5E7A50C92A08A2AD00F2D05A /* UIButtonChainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonChainable.swift; sourceTree = "<group>"; };
+		5E7A50CA2A08A2AD00F2D05A /* UILableChainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILableChainable.swift; sourceTree = "<group>"; };
+		5E7A50CB2A08A2AD00F2D05A /* UISwitchChainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISwitchChainable.swift; sourceTree = "<group>"; };
+		5E7A50CC2A08A2AD00F2D05A /* UITextViewChainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextViewChainable.swift; sourceTree = "<group>"; };
+		5E7A50CD2A08A2AD00F2D05A /* UIStepperChainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStepperChainable.swift; sourceTree = "<group>"; };
+		5E7A50CE2A08A2AD00F2D05A /* UITextFieldChainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldChainable.swift; sourceTree = "<group>"; };
+		5E7A50CF2A08A2AD00F2D05A /* UISliderChainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISliderChainable.swift; sourceTree = "<group>"; };
+		5E7A50D02A08A2AD00F2D05A /* UIViewChainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewChainable.swift; sourceTree = "<group>"; };
+		5E7A50D12A08A2AD00F2D05A /* UITableViewChainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewChainable.swift; sourceTree = "<group>"; };
 		64D45D1196D21439E17D2F6955A52D34 /* Pods-SimpleChainableStackUI_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SimpleChainableStackUI_Example.modulemap"; sourceTree = "<group>"; };
-		6B87F28D2C2A6301EFB4C673CB0783A8 /* UIViewChainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIViewChainable.swift; sourceTree = "<group>"; };
-		6BFCAB8B411419B04260BECB3156C4A0 /* Chainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Chainable.swift; path = SimpleChainableStackUI/Classes/Chainable/Chainable.swift; sourceTree = "<group>"; };
 		70F3565831BEE2878A0221DC867116D8 /* SimpleChainableStackUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SimpleChainableStackUI-Info.plist"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		78D96F0EC451E1DBB48CC67D643E9367 /* Pods-SimpleChainableStackUI_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SimpleChainableStackUI_Tests"; path = Pods_SimpleChainableStackUI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F21B06146C50EEC081F7925FF4F0940 /* Pods-SimpleChainableStackUI_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SimpleChainableStackUI_Example-frameworks.sh"; sourceTree = "<group>"; };
-		818B90CB718D426E78852A5DD82196BF /* UIStackViewChainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIStackViewChainable.swift; sourceTree = "<group>"; };
 		8CAD157371678EBCCFEFAAE64C1EB822 /* SimpleChainableStackUI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleChainableStackUI-prefix.pch"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9FD284AE4F8495A068DEC23CDB12784F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		A1C4837B88DC3093D102C322EE45FA3F /* ChainableExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChainableExtension.swift; path = SimpleChainableStackUI/Classes/Chainable/ChainableExtension.swift; sourceTree = "<group>"; };
-		A245B669295E923BB0E06325795D29D1 /* UISliderChainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UISliderChainable.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FD284AE4F8495A068DEC23CDB12784F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A585061D629E159A5CE4E2FF8B1BF658 /* SimpleChainableStackUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleChainableStackUI-umbrella.h"; sourceTree = "<group>"; };
 		A7FA3FD124E27052A11B67ABBFB6DAD3 /* Pods-SimpleChainableStackUI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleChainableStackUI_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AAA10D6F49C4A74C6F261CF20C0A603B /* SimpleChainableStackUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleChainableStackUI.debug.xcconfig; sourceTree = "<group>"; };
-		AF133BD6E794DE21FA9E8F990A6FA26A /* UIButtonChainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIButtonChainable.swift; sourceTree = "<group>"; };
-		B8C21B405D55E0200E19732A685FA964 /* UILableChainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UILableChainable.swift; sourceTree = "<group>"; };
-		C87F22A26AF94EE0F23237645C771B2E /* UIStepperChainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIStepperChainable.swift; sourceTree = "<group>"; };
 		CB3387DA53E7C8F0A2D6AC93CBA44DB8 /* Pods-SimpleChainableStackUI_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleChainableStackUI_Example-Info.plist"; sourceTree = "<group>"; };
 		D0E7003F8D58438E5FE889144B8D260B /* Pods-SimpleChainableStackUI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleChainableStackUI_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D17A88CAE11CCBB39E4FC0F491F8CE51 /* Pods-SimpleChainableStackUI_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SimpleChainableStackUI_Tests-dummy.m"; sourceTree = "<group>"; };
-		D3A59347E8B644883C1D1A9A80796316 /* UICollectionViewChainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UICollectionViewChainable.swift; sourceTree = "<group>"; };
 		D86AD05CADE30D400F8BFE7FFED781DA /* Pods-SimpleChainableStackUI_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleChainableStackUI_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		DBFC320270EBD721EB89CA964C29CC91 /* UIPageControlChainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIPageControlChainable.swift; sourceTree = "<group>"; };
 		E10F1759341C4702DA47770C9EA2D914 /* Pods-SimpleChainableStackUI_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SimpleChainableStackUI_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E2461CCECED517E37C9706863F17C2D7 /* UIImageViewChainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIImageViewChainable.swift; sourceTree = "<group>"; };
-		EA8F49F1A0E6AD8FED25078608CB923F /* UISwitchChainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UISwitchChainable.swift; sourceTree = "<group>"; };
 		EF7006A561AD234D5530ABC8467F7922 /* Pods-SimpleChainableStackUI_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SimpleChainableStackUI_Tests.modulemap"; sourceTree = "<group>"; };
 		F7547427D69027BFF369AB1A10DCFB3B /* SimpleChainableStackUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SimpleChainableStackUI.modulemap; sourceTree = "<group>"; };
 		FB16908AB3698A3AF898FC584D03BF9F /* Pods-SimpleChainableStackUI_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SimpleChainableStackUI_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -132,29 +132,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		121391C549256C3E992FA3E5C8F7D6FB /* ViewChainable */ = {
-			isa = PBXGroup;
-			children = (
-				AF133BD6E794DE21FA9E8F990A6FA26A /* UIButtonChainable.swift */,
-				D3A59347E8B644883C1D1A9A80796316 /* UICollectionViewChainable.swift */,
-				6266A29AEB284131480FFC1A8BD00174 /* UIControlChainable.swift */,
-				E2461CCECED517E37C9706863F17C2D7 /* UIImageViewChainable.swift */,
-				B8C21B405D55E0200E19732A685FA964 /* UILableChainable.swift */,
-				DBFC320270EBD721EB89CA964C29CC91 /* UIPageControlChainable.swift */,
-				6418983DDB604C0C866E0F588DE7E850 /* UIScrollViewChainable.swift */,
-				A245B669295E923BB0E06325795D29D1 /* UISliderChainable.swift */,
-				818B90CB718D426E78852A5DD82196BF /* UIStackViewChainable.swift */,
-				C87F22A26AF94EE0F23237645C771B2E /* UIStepperChainable.swift */,
-				EA8F49F1A0E6AD8FED25078608CB923F /* UISwitchChainable.swift */,
-				61D1177B2DDBF491DF16472CE3972A95 /* UITableViewChainable.swift */,
-				052E140C4EAB85ED5CB15FC2E2340D2A /* UITextFieldChainable.swift */,
-				4EA99F6DFAD828B7CCF96B93D6220973 /* UITextViewChainable.swift */,
-				6B87F28D2C2A6301EFB4C673CB0783A8 /* UIViewChainable.swift */,
-			);
-			name = ViewChainable;
-			path = SimpleChainableStackUI/Classes/Chainable/ViewChainable;
-			sourceTree = "<group>";
-		};
 		12BB8788B9BDE52E47A05780FEE01F9B /* Pods-SimpleChainableStackUI_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,11 +151,9 @@
 		1FD397FDDA83D4F5962C2CD76DDABD4F /* SimpleChainableStackUI */ = {
 			isa = PBXGroup;
 			children = (
-				6BFCAB8B411419B04260BECB3156C4A0 /* Chainable.swift */,
-				A1C4837B88DC3093D102C322EE45FA3F /* ChainableExtension.swift */,
+				5E7A50BF2A08A2AD00F2D05A /* Chainable */,
 				A42D7796B151A33747D747DECA8E3A6F /* Pod */,
 				9BC056C28DAC6C77E0D46CF16B40C4BB /* Support Files */,
-				121391C549256C3E992FA3E5C8F7D6FB /* ViewChainable */,
 			);
 			name = SimpleChainableStackUI;
 			path = ../..;
@@ -190,6 +165,39 @@
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		5E7A50BF2A08A2AD00F2D05A /* Chainable */ = {
+			isa = PBXGroup;
+			children = (
+				5E7A50C02A08A2AD00F2D05A /* Chainable.swift */,
+				5E7A50C12A08A2AD00F2D05A /* ChainableExtension.swift */,
+				5E7A50C22A08A2AD00F2D05A /* ViewChainable */,
+			);
+			name = Chainable;
+			path = SimpleChainableStackUI/Classes/Chainable;
+			sourceTree = "<group>";
+		};
+		5E7A50C22A08A2AD00F2D05A /* ViewChainable */ = {
+			isa = PBXGroup;
+			children = (
+				5E7A50C32A08A2AD00F2D05A /* UIStackViewChainable.swift */,
+				5E7A50C42A08A2AD00F2D05A /* UICollectionViewChainable.swift */,
+				5E7A50C52A08A2AD00F2D05A /* UIControlChainable.swift */,
+				5E7A50C62A08A2AD00F2D05A /* UIScrollViewChainable.swift */,
+				5E7A50C72A08A2AD00F2D05A /* UIPageControlChainable.swift */,
+				5E7A50C82A08A2AD00F2D05A /* UIImageViewChainable.swift */,
+				5E7A50C92A08A2AD00F2D05A /* UIButtonChainable.swift */,
+				5E7A50CA2A08A2AD00F2D05A /* UILableChainable.swift */,
+				5E7A50CB2A08A2AD00F2D05A /* UISwitchChainable.swift */,
+				5E7A50CC2A08A2AD00F2D05A /* UITextViewChainable.swift */,
+				5E7A50CD2A08A2AD00F2D05A /* UIStepperChainable.swift */,
+				5E7A50CE2A08A2AD00F2D05A /* UITextFieldChainable.swift */,
+				5E7A50CF2A08A2AD00F2D05A /* UISliderChainable.swift */,
+				5E7A50D02A08A2AD00F2D05A /* UIViewChainable.swift */,
+				5E7A50D12A08A2AD00F2D05A /* UITableViewChainable.swift */,
+			);
+			path = ViewChainable;
 			sourceTree = "<group>";
 		};
 		64C53215B1C498953BFAD1219DB2403B /* Pods-SimpleChainableStackUI_Example */ = {
@@ -440,24 +448,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3C3BF0917FDFB26D4CA8A60310A2C46 /* Chainable.swift in Sources */,
-				F7C19E8FB2CF125EFB72ED2472A53580 /* ChainableExtension.swift in Sources */,
 				A475342E57B4346DC0891969D12BF060 /* SimpleChainableStackUI-dummy.m in Sources */,
-				B8A4DBA68CBD2006E34193B47C948CA1 /* UIButtonChainable.swift in Sources */,
-				F450E38F6DADFF595D80976D7D160996 /* UICollectionViewChainable.swift in Sources */,
-				6E696D5C9C68083A946F329F5867F470 /* UIControlChainable.swift in Sources */,
-				4D8CB9D01554C60CFA70958F95D5BBB6 /* UIImageViewChainable.swift in Sources */,
-				1A3AC05EAC69B376A7FEDFF013A5EC9D /* UILableChainable.swift in Sources */,
-				7DBD00E624210F303358977C6872DF37 /* UIPageControlChainable.swift in Sources */,
-				D9E3360541B7D80C17955723CD755068 /* UIScrollViewChainable.swift in Sources */,
-				324518677435B42F673FBE6369BA9FD6 /* UISliderChainable.swift in Sources */,
-				A4A0EBD808CC838C3096E5A959989842 /* UIStackViewChainable.swift in Sources */,
-				9590A5D658653CBDEF5B106E776C07D3 /* UIStepperChainable.swift in Sources */,
-				8B4BDF81BD151535EE819C7D4243CAF1 /* UISwitchChainable.swift in Sources */,
-				6E4EF88DA568152FF04D59AFFF9575EB /* UITableViewChainable.swift in Sources */,
-				E10DE2DC73C48B04981201728BDF1E84 /* UITextFieldChainable.swift in Sources */,
-				614EAA293145F46296D0B156534CDB1E /* UITextViewChainable.swift in Sources */,
-				B7C8943F975308653010FD90F14592E3 /* UIViewChainable.swift in Sources */,
+				5E7A50DC2A08A2AD00F2D05A /* UISwitchChainable.swift in Sources */,
+				5E7A50DF2A08A2AD00F2D05A /* UITextFieldChainable.swift in Sources */,
+				5E7A50DA2A08A2AD00F2D05A /* UIButtonChainable.swift in Sources */,
+				5E7A50D22A08A2AD00F2D05A /* Chainable.swift in Sources */,
+				5E7A50D82A08A2AD00F2D05A /* UIPageControlChainable.swift in Sources */,
+				5E7A50DB2A08A2AD00F2D05A /* UILableChainable.swift in Sources */,
+				5E7A50D92A08A2AD00F2D05A /* UIImageViewChainable.swift in Sources */,
+				5E7A50DD2A08A2AD00F2D05A /* UITextViewChainable.swift in Sources */,
+				5E7A50E12A08A2AD00F2D05A /* UIViewChainable.swift in Sources */,
+				5E7A50D32A08A2AD00F2D05A /* ChainableExtension.swift in Sources */,
+				5E7A50E02A08A2AD00F2D05A /* UISliderChainable.swift in Sources */,
+				5E7A50DE2A08A2AD00F2D05A /* UIStepperChainable.swift in Sources */,
+				5E7A50E22A08A2AD00F2D05A /* UITableViewChainable.swift in Sources */,
+				5E7A50D72A08A2AD00F2D05A /* UIScrollViewChainable.swift in Sources */,
+				5E7A50D52A08A2AD00F2D05A /* UICollectionViewChainable.swift in Sources */,
+				5E7A50D42A08A2AD00F2D05A /* UIStackViewChainable.swift in Sources */,
+				5E7A50D62A08A2AD00F2D05A /* UIControlChainable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,8 +639,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
