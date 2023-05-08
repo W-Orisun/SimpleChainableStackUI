@@ -7,18 +7,27 @@
 //
 
 import UIKit
+import SimpleChainableStackUI
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let label = UILabel()
+            .text("SimpleChainableStackUI")
+            .font(UIFont.systemFont(ofSize: 20))
+            .textColor(.gray)
+            .frame(CGRect(x: 0, y: 0, width: 300, height: 20))
+            .textAlignment(.center)
+            .set(\.shadowColor, to: .black)
+        view.addSubview(label)
+        label.center = view.center
     }
-
 }
 
