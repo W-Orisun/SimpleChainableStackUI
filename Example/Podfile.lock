@@ -1,0 +1,16 @@
+PODS:
+  - SimpleChainableStackUI (0.1.0)
+
+DEPENDENCIES:
+  - SimpleChainableStackUI (from `../`)
+
+EXTERNAL SOURCES:
+  SimpleChainableStackUI:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SimpleChainableStackUI: c16b0472163ef481a12ae0200ce80ea92365913e
+
+PODFILE CHECKSUM: 6a2fa39476cbc2b92668f1f880002b2e778c983b
+
+COCOAPODS: 1.11.3
