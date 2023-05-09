@@ -15,7 +15,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            self.present(TableViewController(), animated: true)
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {

@@ -1,5 +1,5 @@
 //
-//  UIPageControlChainable.swift
+//  UIPageControlClosureChainable.swift
 //  SimpleChainableStackUI
 //
 //  Created by Orisun on 2023/5/8.

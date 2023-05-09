@@ -269,25 +269,25 @@ public extension UITableViewChainable {
 public extension UITableViewChainable {
     
     @discardableResult
-    func register(_ nib: UINib?, forCellReuseIdentifier identifier: String) -> Self {
+    func registerNib(_ nib: UINib?, forCellReuseIdentifier identifier: String) -> Self {
         register(nib, forCellReuseIdentifier: identifier)
         return self
     }
     
     @discardableResult
-    func register(_ cellClass: AnyClass?, forCellReuseIdentifier identifier: String) -> Self {
+    func registerClass(_ cellClass: AnyClass?, forCellReuseIdentifier identifier: String) -> Self {
         register(cellClass, forCellReuseIdentifier: identifier)
         return self
     }
     
     @discardableResult
-    func register(_ nib: UINib?, forHeaderFooterViewReuseIdentifier identifier: String) -> Self {
+    func registerNib(_ nib: UINib?, forHeaderFooterViewReuseIdentifier identifier: String) -> Self {
         register(nib, forHeaderFooterViewReuseIdentifier: identifier)
         return self
     }
     
     @discardableResult
-    func register(_ aClass: AnyClass?, forHeaderFooterViewReuseIdentifier identifier: String) -> Self {
+    func registerClass(_ aClass: AnyClass?, forHeaderFooterViewReuseIdentifier identifier: String) -> Self {
         register(aClass, forHeaderFooterViewReuseIdentifier: identifier)
         return self
     }

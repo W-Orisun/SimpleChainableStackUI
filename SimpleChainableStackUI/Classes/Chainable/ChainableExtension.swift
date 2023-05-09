@@ -11,17 +11,17 @@ import UIKit
 extension Optional : Chainable where Wrapped: Chainable {}
 extension UIView : Chainable {}
 
-extension UIView : UIViewChainable, UIViewLayerChainable {}
+extension UIView : UIViewChainable, UIViewLayerChainable, UIViewGestureClosureChainable {}
 extension UILabel : UILabelChainable {}
-extension UIButton : UIButtonChainable {}
+extension UIButton : UIButtonChainable, UIButtonControlClosureChainable {}
 extension UIControl : UIControlChainable {}
 extension UITableView : UITableViewChainable {}
-extension UITextField : UITextFieldChainable {}
+extension UITextField : UITextFieldChainable, UITextFieldControlClosureChainable {}
 extension UITextView : UITextViewChainable {}
 extension UICollectionView : UICollectionViewChainable {}
 extension UIScrollView : UIScrollViewChainable {}
 extension UIStackView : UIStackViewChainable {}
-extension UISwitch : UISwitchChainable {}
-extension UISlider : UISliderChainable {}
-extension UIStepper : UIStepperChainable {}
+extension UISwitch : UISwitchChainable, UISwitchControlClosureChainable {}
+extension UISlider : UISliderChainable, UISliderControlClosureChainable {}
+extension UIStepper : UIStepperChainable, UIStepperControlClosureChainable {}
 extension UIPageControl : UIPageControlChainable {}
