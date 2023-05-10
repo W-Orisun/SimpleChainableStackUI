@@ -9,10 +9,44 @@
 import UIKit
 import SimpleChainableStackUI
 
+
+class MyView : UIView {
+    
+    var text: String?
+    
+    func a() {
+
+    }
+}
+
+func a() {
+    MyView()
+        .set(\.text, to: "Text")
+        .set(\.frame, to: .zero)
+}
+
+
+
+
+/*
+ let label = UILabel()
+     .size(height: 28)
+     .assign(to: &titleLabel)
+ */
+
+
 class ViewController: UIViewController {
     
-    var titleLabel: UILabel!
     @Observable var titleLabelHidden = false
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let label = UILabel()
+            .observableHidden($titleLabelHidden)
+    }
+    
+    var titleLabel: UILabel!
+    
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -35,9 +69,12 @@ class ViewController: UIViewController {
                     .backgroundColor(UIColor.lightGray)
                     .bindHidden(to: titleLabel)
                 HStack(distribution: .fillEqually) {
-                    UILabel().text("simple").textAlignment(.center)
-                    UILabel().text("chainable").textAlignment(.center)
-                    UILabel().text("stack").textAlignment(.center)
+                    for text in ["simple", "chainable", "stack"] {
+                        UILabel().text(text).textAlignment(.center)
+                    }
+                    if titleLabel.isHidden {
+                        UILabel().text("")
+                    }
                 }
                 UIButton(type: .system)
                     .title("Hide Title", for: .normal)
