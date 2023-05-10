@@ -110,6 +110,7 @@ let container = ViewContainer {
 ## Requirements
 
 - iOS 10.0+
+- Swift 5.4+
 
 ## Installation
 

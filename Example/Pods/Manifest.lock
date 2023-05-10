@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SimpleChainableStackUI: a703301a0dae7cf59687956e6a8a0bec5c1897a2
+  SimpleChainableStackUI: 6714984f60fb8eab17ed4ece0d1108e7f804eba5
 
 PODFILE CHECKSUM: 554fcdea489f28874a9efc401780e97b19229e8f
 
