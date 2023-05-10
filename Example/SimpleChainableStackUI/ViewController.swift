@@ -11,14 +11,8 @@ import SimpleChainableStackUI
 
 class ViewController: UIViewController {
     
-    var label: UILabel!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            self.present(TableViewController(), animated: true)
-        }
-    }
+    @Observable var titleLabel: UILabel!
+    @Observable var titleLabelHidden = false
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -28,36 +22,33 @@ class ViewController: UIViewController {
                 UILabel()
                     .text("SimpleChainableStackUI")
                     .font(UIFont.systemFont(ofSize: 20))
-                    .textColor(.gray)
                     .textAlignment(.center)
-                    .set(\.shadowColor, to: .black)
                     .size(height: 28)
+                    .assign(to: &titleLabel)
+                    .observableHidden($titleLabelHidden)
+                    .textColor(.red)
+                    .set(\.textColor, to: .blue)
                     .apply { label in
-                        label.textColor = .red
+                        label.textColor = .darkGray
                     }
-                    .assign(to: &label)
                 Spacer()
-                    .backgroundColor(.red)
-                    .bindHidden(to: label)
+                    .backgroundColor(UIColor.lightGray)
+                    .bindHidden(to: titleLabel)
                 HStack(distribution: .fillEqually) {
                     UILabel().text("simple").textAlignment(.center)
                     UILabel().text("chainable").textAlignment(.center)
                     UILabel().text("stack").textAlignment(.center)
                 }
                 UIButton(type: .system)
-                    .title("隐藏标题", for: .normal)
-                    .apply { [unowned self] button in
-                        button.addTarget(self, action: #selector(changeLabelHidden), for: .touchUpInside)
+                    .title("Hide Title", for: .normal)
+                    .onTouchUpInside { [unowned self] in
+                        self.titleLabelHidden.toggle()
                     }
             }
         }.frame(CGRect(x: 0, y: 0, width: 240, height: 128))
         
         view.addSubview(container)
         container.center = view.center
-    }
-    
-    @objc func changeLabelHidden() {
-        label.isHidden.toggle()
     }
 }
 

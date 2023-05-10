@@ -23,6 +23,22 @@ public extension UIButtonControlClosureChainable {
     }
 }
 
+
+public protocol UITextFieldControlClosureChainable : UITextField {}
+public extension UITextFieldControlClosureChainable {
+    
+    @discardableResult
+    func onEditingChanged(action: @escaping (String?) -> Void) -> Self {
+        let ac = AssociatedClosure(target: self, key: &valueChangedChainableKey, closure: { [unowned self] in
+            action(self.text)
+        })
+        removeTarget(nil, action: nil, for: .editingChanged)
+        addTarget(ac, action: AssociatedClosure.invokeSelector, for: .editingChanged)
+        return self
+    }
+}
+
+
 public protocol UISwitchControlClosureChainable : UISwitch {}
 public extension UISwitchControlClosureChainable {
     
@@ -36,6 +52,7 @@ public extension UISwitchControlClosureChainable {
         return self
     }
 }
+
 
 public protocol UISliderControlClosureChainable : UISlider {}
 public extension UISliderControlClosureChainable {
@@ -51,6 +68,7 @@ public extension UISliderControlClosureChainable {
     }
 }
 
+
 public protocol UIStepperControlClosureChainable : UIStepper {}
 public extension UIStepperControlClosureChainable {
     
@@ -61,20 +79,6 @@ public extension UIStepperControlClosureChainable {
         })
         removeTarget(nil, action: nil, for: .valueChanged)
         addTarget(ac, action: AssociatedClosure.invokeSelector, for: .valueChanged)
-        return self
-    }
-}
-
-public protocol UITextFieldControlClosureChainable : UITextField {}
-public extension UITextFieldControlClosureChainable {
-    
-    @discardableResult
-    func onEditingChanged(action: @escaping (String?) -> Void) -> Self {
-        let ac = AssociatedClosure(target: self, key: &valueChangedChainableKey, closure: { [unowned self] in
-            action(self.text)
-        })
-        removeTarget(nil, action: nil, for: .editingChanged)
-        addTarget(ac, action: AssociatedClosure.invokeSelector, for: .editingChanged)
         return self
     }
 }

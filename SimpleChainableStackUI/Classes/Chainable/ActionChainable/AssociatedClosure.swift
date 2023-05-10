@@ -14,7 +14,6 @@ final class AssociatedClosure {
     init(target: AnyObject, key: UnsafeRawPointer, closure: @escaping () -> Void) {
         self.closure = closure
         objc_setAssociatedObject(target, key, self, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-        print("AssociatedClosure \(address(o: self)) key:\(key) is init")
     }
     
     convenience init(target: AnyObject, closure: @escaping () -> Void) {
@@ -26,13 +25,4 @@ final class AssociatedClosure {
     }
 
     static let invokeSelector = #selector(AssociatedClosure.invoke)
-    
-    deinit {
-        print("AssociatedClosure \(address(o: self)) is deinit")
-    }
-}
-
-public func address<T: AnyObject>(o: T) -> String {
-    let res = String.init(format: "%018p", unsafeBitCast(o, to: Int.self))
-    return res
 }
