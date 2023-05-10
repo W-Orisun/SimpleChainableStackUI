@@ -123,4 +123,10 @@ public extension UILabelChainable {
         preferredMaxLayoutWidth = newValue
         return self
     }
+    
+    @discardableResult
+    func showsExpansionTextWhenTruncated(_ newValue: Bool) -> Self {
+        showsExpansionTextWhenTruncated = newValue
+        return self
+    }
 }

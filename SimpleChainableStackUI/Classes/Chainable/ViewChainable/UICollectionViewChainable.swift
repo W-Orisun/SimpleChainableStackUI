@@ -12,37 +12,37 @@ public protocol UICollectionViewChainable : UICollectionView {}
 public extension UICollectionViewChainable {
     
     @discardableResult
+    func collectionViewLayout(_ newValue: UICollectionViewLayout) -> Self {
+        collectionViewLayout = newValue
+        return self
+    }
+    
+    @discardableResult
     func delegate(_ newValue: UICollectionViewDelegate?) -> Self {
         delegate = newValue
         return self
     }
     
     @discardableResult
-    func collectionViewLayout(_ newValue: UICollectionViewLayout) -> Self {
-        collectionViewLayout = newValue
-        return self
-    }
-
-    @discardableResult
     func dataSource(_ newValue: UICollectionViewDataSource?) -> Self {
         dataSource = newValue
         return self
     }
-
+    
     @available(iOS 10.0, *)
     @discardableResult
     func prefetchDataSource(_ newValue: UICollectionViewDataSourcePrefetching?) -> Self {
         prefetchDataSource = newValue
         return self
     }
-
+    
     @available(iOS 10.0, *)
     @discardableResult
     func isPrefetchingEnabled(_ newValue: Bool) -> Self {
         isPrefetchingEnabled = newValue
         return self
     }
-
+    
     @available(iOS 11.0, *)
     @discardableResult
     func dragDelegate(_ newValue: UICollectionViewDragDelegate?) -> Self {
@@ -56,21 +56,28 @@ public extension UICollectionViewChainable {
         dropDelegate = newValue
         return self
     }
-
+    
     @available(iOS 11.0, *)
     @discardableResult
     func dragInteractionEnabled(_ newValue: Bool) -> Self {
         dragInteractionEnabled = newValue
         return self
     }
-
+    
     @available(iOS 11.0, *)
     @discardableResult
     func reorderingCadence(_ newValue: UICollectionView.ReorderingCadence) -> Self {
         reorderingCadence = newValue
         return self
     }
-
+    
+    @available(iOS 16.0, *)
+    @discardableResult
+    func selfSizingInvalidation(_ newValue: UICollectionView.SelfSizingInvalidation) -> Self {
+        selfSizingInvalidation = newValue
+        return self
+    }
+    
     @discardableResult
     func backgroundView(_ newValue: UIView?) -> Self {
         backgroundView = newValue
@@ -102,6 +109,20 @@ public extension UICollectionViewChainable {
         selectionFollowsFocus = newValue
         return self
     }
+    
+    @available(iOS 15.0, *)
+    @discardableResult
+    func allowsFocus(_ newValue: Bool) -> Self {
+        allowsFocus = newValue
+        return self
+    }
+    
+    @available(iOS 15.0, *)
+    @discardableResult
+    func allowsFocusDuringEditing(_ newValue: Bool) -> Self {
+        allowsFocusDuringEditing = newValue
+        return self
+    }
 
     @available(iOS 14.0, *)
     @discardableResult
@@ -121,20 +142,6 @@ public extension UICollectionViewChainable {
     @discardableResult
     func allowsMultipleSelectionDuringEditing(_ newValue: Bool) -> Self {
         allowsMultipleSelectionDuringEditing = newValue
-        return self
-    }
-    
-    @available(iOS 15.0, *)
-    @discardableResult
-    func allowsFocus(_ newValue: Bool) -> Self {
-        allowsFocus = newValue
-        return self
-    }
-    
-    @available(iOS 15.0, *)
-    @discardableResult
-    func allowsFocusDuringEditing(_ newValue: Bool) -> Self {
-        allowsFocusDuringEditing = newValue
         return self
     }
 }

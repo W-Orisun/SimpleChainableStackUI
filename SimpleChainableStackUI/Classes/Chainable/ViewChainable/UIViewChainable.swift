@@ -29,6 +29,20 @@ public extension UIViewChainable {
         focusGroupIdentifier = newValue
         return self
     }
+    
+    @available(iOS 15.0, *)
+    @discardableResult
+    func focusGroupPriority(_ newValue: UIFocusGroupPriority) -> Self {
+        self.focusGroupPriority = newValue
+        return self
+    }
+    
+    @available(iOS 15.0, *)
+    @discardableResult
+    func focusEffect(_ newValue: UIFocusEffect?) -> Self {
+        self.focusEffect = newValue
+        return self
+    }
 
     @available(iOS 9.0, *)
     @discardableResult
@@ -36,7 +50,10 @@ public extension UIViewChainable {
         semanticContentAttribute = newValue
         return self
     }
+}
 
+public extension UIViewChainable {
+    
     @discardableResult
     func frame(_ newValue: CGRect) -> Self {
         frame = newValue
@@ -74,6 +91,13 @@ public extension UIViewChainable {
         contentScaleFactor = newValue
         return self
     }
+    
+    @available(iOS 16.0, *)
+    @discardableResult
+    func anchorPoint(_ newValue: CGPoint) -> Self {
+        anchorPoint = newValue
+        return self
+    }
 
     @discardableResult
     func isMultipleTouchEnabled(_ newValue: Bool) -> Self {
@@ -98,7 +122,10 @@ public extension UIViewChainable {
         autoresizingMask = newValue
         return self
     }
+}
 
+public extension UIViewChainable {
+    
     @available(iOS 8.0, *)
     @discardableResult
     func layoutMargins(_ newValue: UIEdgeInsets) -> Self {
@@ -126,7 +153,10 @@ public extension UIViewChainable {
         insetsLayoutMarginsFromSafeArea = newValue
         return self
     }
+}
 
+public extension UIViewChainable {
+    
     @discardableResult
     func clipsToBounds(_ newValue: Bool) -> Self {
         clipsToBounds = newValue
@@ -189,35 +219,50 @@ public extension UIViewChainable {
         tintAdjustmentMode = newValue
         return self
     }
+}
 
+public extension UIViewChainable {
+    
     @available(iOS 3.2, *)
     @discardableResult
     func gestureRecognizers(_ newValue: [UIGestureRecognizer]?) -> Self {
         gestureRecognizers = newValue
         return self
     }
+}
 
+public extension UIViewChainable {
+    
     @available(iOS 7.0, *)
     @discardableResult
     func motionEffects(_ newValue: [UIMotionEffect]) -> Self {
         motionEffects = newValue
         return self
     }
+}
 
+public extension UIViewChainable {
+    
     @available(iOS 6.0, *)
     @discardableResult
     func translatesAutoresizingMaskIntoConstraints(_ newValue: Bool) -> Self {
         translatesAutoresizingMaskIntoConstraints = newValue
         return self
     }
+}
 
+public extension UIViewChainable {
+    
     @available(iOS 6.0, *)
     @discardableResult
     func restorationIdentifier(_ newValue: String?) -> Self {
         restorationIdentifier = newValue
         return self
     }
+}
 
+public extension UIViewChainable {
+    
     @available(iOS 13.0, *)
     @discardableResult
     func overrideUserInterfaceStyle(_ newValue: UIUserInterfaceStyle) -> Self {
@@ -237,20 +282,6 @@ public extension UIViewChainable {
         if let height = height {
             heightAnchor.constraint(equalToConstant: height).isActive = true
         }
-        return self
-    }
-    
-    @available(iOS 15.0, *)
-    @discardableResult
-    func focusGroupPriority(_ newValue: UIFocusGroupPriority) -> Self {
-        self.focusGroupPriority = newValue
-        return self
-    }
-    
-    @available(iOS 15.0, *)
-    @discardableResult
-    func focusEffect(_ newValue: UIFocusEffect?) -> Self {
-        self.focusEffect = newValue
         return self
     }
     

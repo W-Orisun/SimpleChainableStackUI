@@ -12,6 +12,12 @@ public protocol UITextViewChainable : UITextView {}
 public extension UITextViewChainable {
     
     @discardableResult
+    func delegate(_ newValue: UITextViewDelegate?) -> Self {
+        delegate = newValue
+        return self
+    }
+    
+    @discardableResult
     func text(_ newValue: String!) -> Self {
         text = newValue
         return self
@@ -122,11 +128,15 @@ public extension UITextViewChainable {
         return self
     }
     
+    @available(iOS 16.0, *)
     @discardableResult
-    func delegate(_ newValue: UITextViewDelegate?) -> Self {
-        delegate = newValue
+    func isFindInteractionEnabled(_ newValue: Bool) -> Self {
+        isFindInteractionEnabled = newValue
         return self
     }
+}
+
+public extension UITextViewChainable {
     
     @available(iOS 15.0, *)
     @discardableResult
@@ -134,6 +144,9 @@ public extension UITextViewChainable {
         interactionState = newValue
         return self
     }
+}
+
+public extension UITextViewChainable {
     
     @discardableResult
     func autocapitalizationType(_ newValue: UITextAutocapitalizationType) -> Self {

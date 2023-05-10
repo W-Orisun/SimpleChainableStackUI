@@ -166,6 +166,9 @@ public extension UITextFieldChainable {
         clearsOnInsertion = newValue
         return self
     }
+}
+
+public extension UITextFieldChainable {
     
     @discardableResult
     func autocapitalizationType(_ newValue: UITextAutocapitalizationType) -> Self {
@@ -179,6 +182,7 @@ public extension UITextFieldChainable {
         return self
     }
     
+    @available(iOS 5.0, *)
     @discardableResult
     func spellCheckingType(_ newValue: UITextSpellCheckingType) -> Self {
         spellCheckingType = newValue

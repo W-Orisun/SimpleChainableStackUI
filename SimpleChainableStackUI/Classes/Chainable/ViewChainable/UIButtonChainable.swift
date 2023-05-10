@@ -22,16 +22,16 @@ public extension UIButtonChainable {
         titleEdgeInsets = newValue
         return self
     }
-
+    
     @discardableResult
-    func reversesTitleShadowWhenHighlighted(_ newValue: Bool) -> Self {
-        reversesTitleShadowWhenHighlighted = newValue
+    func imageEdgeInsets(_ newValue: UIEdgeInsets) -> Self {
+        imageEdgeInsets = newValue
         return self
     }
 
     @discardableResult
-    func imageEdgeInsets(_ newValue: UIEdgeInsets) -> Self {
-        imageEdgeInsets = newValue
+    func reversesTitleShadowWhenHighlighted(_ newValue: Bool) -> Self {
+        reversesTitleShadowWhenHighlighted = newValue
         return self
     }
 
@@ -52,14 +52,31 @@ public extension UIButtonChainable {
         showsTouchWhenHighlighted = newValue
         return self
     }
+}
 
+public extension UIButtonChainable {
+    
+    @available(iOS 15.0, *)
+    @discardableResult
+    func configurationUpdateHandler(_ newValue: UIButton.ConfigurationUpdateHandler?) -> Self {
+        configurationUpdateHandler = newValue
+        return self
+    }
+    
+    @available(iOS 15.0, *)
+    @discardableResult
+    func automaticallyUpdatesConfiguration(_ newValue: Bool) -> Self {
+        automaticallyUpdatesConfiguration = newValue
+        return self
+    }
+    
     @available(iOS 14.0, *)
     @discardableResult
     func role(_ newValue: UIButton.Role) -> Self {
         role = newValue
         return self
     }
-
+    
     @available(iOS 13.4, *)
     @discardableResult
     func isPointerInteractionEnabled(_ newValue: Bool) -> Self {
@@ -67,17 +84,44 @@ public extension UIButtonChainable {
         return self
     }
     
+    @available(iOS 14.0, *)
+    @discardableResult
+    func menu(_ newValue: UIMenu?) -> Self {
+        menu = newValue
+        return self
+    }
+    
+    @available(iOS 16.0, *)
+    @discardableResult
+    func preferredMenuElementOrder(_ newValue: UIContextMenuConfiguration.ElementOrder) -> Self {
+        preferredMenuElementOrder = newValue
+        return self
+    }
+    
+    @available(iOS 15.0, *)
+    @discardableResult
+    func changesSelectionAsPrimaryAction(_ newValue: Bool) -> Self {
+        changesSelectionAsPrimaryAction = newValue
+        return self
+    }
+}
+
+public extension UIButtonChainable {
+    
     @available(iOS 13.4, *)
     @discardableResult
     func pointerStyleProvider(_ newValue: UIButton.PointerStyleProvider?) -> Self {
         pointerStyleProvider = newValue
         return self
     }
+}
 
-    @available(iOS 14.0, *)
+public extension UIButtonChainable {
+    
+    @available(iOS 15.0, *)
     @discardableResult
-    func menu(_ newValue: UIMenu?) -> Self {
-        menu = newValue
+    func configuration(_ newValue: UIButton.Configuration?) -> Self {
+        configuration = newValue
         return self
     }
 }

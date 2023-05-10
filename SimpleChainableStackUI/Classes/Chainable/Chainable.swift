@@ -13,7 +13,7 @@ public extension Chainable {
     
     @inlinable
     @discardableResult
-    func set<Value>(_ keyPath: ReferenceWritableKeyPath<Self, Value>, to value: Value) -> Self {
+    func set<T>(_ keyPath: ReferenceWritableKeyPath<Self, T>, to value: T) -> Self {
         self[keyPath: keyPath] = value
         return self
     }
@@ -21,9 +21,9 @@ public extension Chainable {
     @inlinable
     @discardableResult
     func apply(_ transform: (inout Self) -> Void) -> Self {
-        var tmp = self
-        transform(&tmp)
-        return tmp
+        var mutableSelf = self
+        transform(&mutableSelf)
+        return mutableSelf
     }
     
     @discardableResult

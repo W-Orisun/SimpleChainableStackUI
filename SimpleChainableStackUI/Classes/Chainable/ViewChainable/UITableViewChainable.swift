@@ -29,6 +29,13 @@ public extension UITableViewChainable {
         prefetchDataSource = newValue
         return self
     }
+    
+    @available(iOS 15.0, *)
+    @discardableResult
+    func isPrefetchingEnabled(_ newValue: Bool) -> Self {
+        isPrefetchingEnabled = newValue
+        return self
+    }
 
     @available(iOS 11.0, *)
     @discardableResult
@@ -82,6 +89,20 @@ public extension UITableViewChainable {
         estimatedSectionFooterHeight = newValue
         return self
     }
+    
+    @available(iOS 15.0, *)
+    @discardableResult
+    func fillerRowHeight(_ newValue: CGFloat) -> Self {
+        fillerRowHeight = newValue
+        return self
+    }
+    
+    @available(iOS 15.0, *)
+    @discardableResult
+    func sectionHeaderTopPadding(_ newValue: CGFloat) -> Self {
+        sectionHeaderTopPadding = newValue
+        return self
+    }
 
     @available(iOS 7.0, *)
     @discardableResult
@@ -94,6 +115,13 @@ public extension UITableViewChainable {
     @discardableResult
     func separatorInsetReference(_ newValue: UITableView.SeparatorInsetReference) -> Self {
         separatorInsetReference = newValue
+        return self
+    }
+    
+    @available(iOS 16.0, *)
+    @discardableResult
+    func selfSizingInvalidation(_ newValue: UITableView.SelfSizingInvalidation) -> Self {
+        selfSizingInvalidation = newValue
         return self
     }
 
@@ -222,34 +250,6 @@ public extension UITableViewChainable {
         selectionFollowsFocus = newValue
         return self
     }
-
-    @available(iOS 11.0, *)
-    @discardableResult
-    func dragInteractionEnabled(_ newValue: Bool) -> Self {
-        dragInteractionEnabled = newValue
-        return self
-    }
-    
-    @available(iOS 15.0, *)
-    @discardableResult
-    func isPrefetchingEnabled(_ newValue: Bool) -> Self {
-        isPrefetchingEnabled = newValue
-        return self
-    }
-    
-    @available(iOS 15.0, *)
-    @discardableResult
-    func fillerRowHeight(_ newValue: CGFloat) -> Self {
-        fillerRowHeight = newValue
-        return self
-    }
-    
-    @available(iOS 15.0, *)
-    @discardableResult
-    func sectionHeaderTopPadding(_ newValue: CGFloat) -> Self {
-        sectionHeaderTopPadding = newValue
-        return self
-    }
     
     @available(iOS 15.0, *)
     @discardableResult
@@ -262,6 +262,13 @@ public extension UITableViewChainable {
     @discardableResult
     func allowsFocusDuringEditing(_ newValue: Bool) -> Self {
         allowsFocusDuringEditing = newValue
+        return self
+    }
+
+    @available(iOS 11.0, *)
+    @discardableResult
+    func dragInteractionEnabled(_ newValue: Bool) -> Self {
+        dragInteractionEnabled = newValue
         return self
     }
 }

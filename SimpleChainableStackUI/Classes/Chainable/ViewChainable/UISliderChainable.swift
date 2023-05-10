@@ -67,6 +67,9 @@ public extension UISliderChainable {
         thumbTintColor = newValue
         return self
     }
+}
+
+public extension UISliderChainable {
     
     @discardableResult
     func thumbImage(_ image: UIImage?, for state: UIControl.State) -> Self {

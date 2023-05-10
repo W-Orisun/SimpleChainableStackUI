@@ -55,6 +55,16 @@ public extension UIControlChainable {
         return self
     }
     
+    @available(iOS 15.0, *)
+    @discardableResult
+    func toolTip(_ newValue: String?) -> Self {
+        toolTip = newValue
+        return self
+    }
+}
+
+public extension UIControlChainable {
+    
     @discardableResult
     func target(_ target: Any?, action: Selector, for controlEvents: UIControl.Event) -> Self {
         addTarget(target, action: action, for: controlEvents)

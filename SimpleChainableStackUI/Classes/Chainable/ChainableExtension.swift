@@ -12,15 +12,15 @@ extension Optional : Chainable where Wrapped: Chainable {}
 extension UIView : Chainable {}
 
 extension UIView : UIViewChainable, UIViewLayerChainable, UIViewGestureClosureChainable {}
+extension UIControl : UIControlChainable {}
 extension UILabel : UILabelChainable {}
 extension UIButton : UIButtonChainable, UIButtonControlClosureChainable {}
-extension UIControl : UIControlChainable {}
+extension UIStackView : UIStackViewChainable {}
+extension UIScrollView : UIScrollViewChainable {}
 extension UITableView : UITableViewChainable {}
+extension UICollectionView : UICollectionViewChainable {}
 extension UITextField : UITextFieldChainable, UITextFieldControlClosureChainable {}
 extension UITextView : UITextViewChainable {}
-extension UICollectionView : UICollectionViewChainable {}
-extension UIScrollView : UIScrollViewChainable {}
-extension UIStackView : UIStackViewChainable {}
 extension UISwitch : UISwitchChainable, UISwitchControlClosureChainable {}
 extension UISlider : UISliderChainable, UISliderControlClosureChainable {}
 extension UIStepper : UIStepperChainable, UIStepperControlClosureChainable {}

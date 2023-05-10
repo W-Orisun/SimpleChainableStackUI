@@ -49,6 +49,13 @@ public extension UIPageControlChainable {
         backgroundStyle = newValue
         return self
     }
+    
+    @available(iOS 16.0, *)
+    @discardableResult
+    func direction(_ newValue: UIPageControl.Direction) -> Self {
+        direction = newValue
+        return self
+    }
 
     @available(iOS 14.0, *)
     @discardableResult
@@ -63,6 +70,13 @@ public extension UIPageControlChainable {
         preferredIndicatorImage = newValue
         return self
     }
+    
+    @available(iOS 16.0, *)
+    @discardableResult
+    func preferredCurrentPageIndicatorImage(_ newValue: UIImage?) -> Self {
+        preferredCurrentPageIndicatorImage = newValue
+        return self
+    }
 
     @available(iOS, introduced: 2.0, deprecated: 14.0, message: "updateCurrentPageDisplay no longer does anything reasonable with the new interaction mode.")
     @discardableResult
@@ -70,6 +84,9 @@ public extension UIPageControlChainable {
         defersCurrentPageDisplay = newValue
         return self
     }
+}
+
+public extension UIPageControlChainable {
     
     @available(iOS 14.0, *)
     @discardableResult

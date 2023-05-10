@@ -52,6 +52,9 @@ public extension UIStepperChainable {
         stepValue = newValue
         return self
     }
+}
+
+public extension UIStepperChainable {
     
     @discardableResult
     func backgroundImage(_ image: UIImage?, for state: UIControl.State) -> Self {
