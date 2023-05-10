@@ -1,8 +1,7 @@
 {
   "name": "SimpleChainableStackUI",
-  "version": "0.1.0",
-  "summary": "A short description of SimpleChainableStackUI.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "1.0.0",
+  "summary": "Simple Chainable StackUI.",
   "homepage": "https://github.com/Orisun/SimpleChainableStackUI",
   "license": {
     "type": "MIT",
@@ -11,12 +10,12 @@
   "authors": {
     "Orisun": "wdyang13@163.com"
   },
-  "source": {
-    "git": "https://github.com/Orisun/SimpleChainableStackUI.git",
-    "tag": "0.1.0"
-  },
   "platforms": {
     "ios": "10.0"
   },
-  "source_files": "SimpleChainableStackUI/Classes/**/*"
+  "source_files": "SimpleChainableStackUI/Classes/**/*",
+  "source": {
+    "git": "https://github.com/Orisun/SimpleChainableStackUI.git",
+    "tag": "1.0.0"
+  }
 }

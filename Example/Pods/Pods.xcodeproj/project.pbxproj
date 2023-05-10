@@ -66,7 +66,7 @@
 		3E9CF9A92CD116B249F1409E0F6AA7A2 /* Pods-SimpleChainableStackUI_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SimpleChainableStackUI_Example"; path = Pods_SimpleChainableStackUI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E9E17F9104D987B10FB19C9833F9680 /* UIPageControlChainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIPageControlChainable.swift; sourceTree = "<group>"; };
 		48E67EB13E2D19C4BC71C9836E20FB21 /* UIButtonChainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIButtonChainable.swift; sourceTree = "<group>"; };
-		5D2433F26B696A1069AD0EF6B5E44A3A /* SimpleChainableStackUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SimpleChainableStackUI.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		5D2433F26B696A1069AD0EF6B5E44A3A /* SimpleChainableStackUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SimpleChainableStackUI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6D2900AC7C3631F8841B641FEF025C10 /* UITextFieldChainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UITextFieldChainable.swift; sourceTree = "<group>"; };
 		70FA45E8B99C62A1D271412B5A19D692 /* SimpleChainableStackUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleChainableStackUI.debug.xcconfig; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -79,11 +79,11 @@
 		85CDB33EB33B38A6CB1C65C5B72DAEAB /* GestureClosureChainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GestureClosureChainable.swift; sourceTree = "<group>"; };
 		879E0BE26042A13933E2A75642C79C15 /* Pods-SimpleChainableStackUI_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SimpleChainableStackUI_Example-dummy.m"; sourceTree = "<group>"; };
 		8C3B72AE9FF88D465061392C0D6590BF /* UISliderChainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UISliderChainable.swift; sourceTree = "<group>"; };
-		8EDE300F74FB255FC920707D620D0EBD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		8EDE300F74FB255FC920707D620D0EBD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		921A5AD2E7344EA0E7DB50FF7559DB2C /* SimpleChainableStackUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SimpleChainableStackUI-dummy.m"; sourceTree = "<group>"; };
 		95BADCD61061A29FEBB725DA6519D10C /* Pods-SimpleChainableStackUI_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SimpleChainableStackUI_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		977913A80278462CB19E1D585DAEE5D8 /* SimpleChainableStackUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SimpleChainableStackUI.modulemap; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F58E0D62AB9E8335BE56FCBFADDC44F /* Stack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		A534F85B5D41BF76F57C19B84F0AD34B /* SimpleChainableStackUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleChainableStackUI-umbrella.h"; sourceTree = "<group>"; };
 		AE08739FD82338533530A39D4010F010 /* Pods-SimpleChainableStackUI_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SimpleChainableStackUI_Example-Info.plist"; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 		B5479E2A401593BEEBA7D15DE92E6C83 /* AssociatedClosure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AssociatedClosure.swift; sourceTree = "<group>"; };
 		B915AF228666E1427002B3B4A564AB00 /* UISwitchChainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UISwitchChainable.swift; sourceTree = "<group>"; };
 		BE9C92AB63F4F6AFA00BF01BBB717E3A /* UILableChainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UILableChainable.swift; sourceTree = "<group>"; };
-		CE50EFACAD411CA473AAC74ED8014A93 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CE50EFACAD411CA473AAC74ED8014A93 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		CF9EAB7C25B9564A1CDFE987CE01DE25 /* Chainable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Chainable.swift; sourceTree = "<group>"; };
 		D6E4037992A7057D385504786881E50A /* Pods-SimpleChainableStackUI_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SimpleChainableStackUI_Example-frameworks.sh"; sourceTree = "<group>"; };
 		DCE4B769F430A64E748A3127C388CE25 /* Pods-SimpleChainableStackUI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SimpleChainableStackUI_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +132,7 @@
 				3245EEDC8BCD9996C4566E716E54A42A /* ControlClosureChainable.swift */,
 				85CDB33EB33B38A6CB1C65C5B72DAEAB /* GestureClosureChainable.swift */,
 			);
+			name = ActionChainable;
 			path = ActionChainable;
 			sourceTree = "<group>";
 		};
@@ -202,6 +203,7 @@
 				2BD6E7F60B1E9CC1659607496A1DB83F /* UIViewChainable.swift */,
 				23CF9D27F654B7B9E1217EA9E625F334 /* UIViewLayerChainable.swift */,
 			);
+			name = ViewChainable;
 			path = ViewChainable;
 			sourceTree = "<group>";
 		};
@@ -545,7 +547,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
