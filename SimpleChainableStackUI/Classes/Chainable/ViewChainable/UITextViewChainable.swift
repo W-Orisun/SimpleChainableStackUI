@@ -83,7 +83,7 @@ public extension UITextViewChainable {
 
     @available(iOS 6.0, *)
     @discardableResult
-    func typingAttributes(_ newValue: [String : Any]) -> Self {
+    func typingAttributes(_ newValue: [NSAttributedString.Key : Any]) -> Self {
         typingAttributes = newValue
         return self
     }
@@ -116,7 +116,7 @@ public extension UITextViewChainable {
 
     @available(iOS 7.0, *)
     @discardableResult
-    func linkTextAttributes(_ newValue: [String : Any]!) -> Self {
+    func linkTextAttributes(_ newValue: [NSAttributedString.Key : Any]!) -> Self {
         linkTextAttributes = newValue
         return self
     }

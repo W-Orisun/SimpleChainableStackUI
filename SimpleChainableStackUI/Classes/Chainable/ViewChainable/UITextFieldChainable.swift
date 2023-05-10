@@ -50,7 +50,7 @@ public extension UITextFieldChainable {
 
     @available(iOS 7.0, *)
     @discardableResult
-    func defaultTextAttributes(_ newValue: [String : Any]) -> Self {
+    func defaultTextAttributes(_ newValue: [NSAttributedString.Key : Any]) -> Self {
         defaultTextAttributes = newValue
         return self
     }
@@ -113,7 +113,7 @@ public extension UITextFieldChainable {
 
     @available(iOS 6.0, *)
     @discardableResult
-    func typingAttributes(_ newValue: [String : Any]?) -> Self {
+    func typingAttributes(_ newValue: [NSAttributedString.Key : Any]?) -> Self {
         typingAttributes = newValue
         return self
     }
