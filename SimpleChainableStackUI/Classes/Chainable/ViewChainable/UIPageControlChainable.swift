@@ -78,13 +78,3 @@ public extension UIPageControlChainable {
         return self
     }
 }
-
-public extension UIPageControlChainable {
-    
-//    func currentPage(_ publisher: Publisher<Int>) -> Self {
-//        publisher.addSubscriber {[weak self] currentPage in
-//            self?.currentPage = currentPage
-//        }
-//        return self
-//    }
-}

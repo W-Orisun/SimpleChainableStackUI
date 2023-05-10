@@ -66,6 +66,13 @@ public extension UIButtonChainable {
         isPointerInteractionEnabled = newValue
         return self
     }
+    
+    @available(iOS 13.4, *)
+    @discardableResult
+    func pointerStyleProvider(_ newValue: UIButton.PointerStyleProvider?) -> Self {
+        pointerStyleProvider = newValue
+        return self
+    }
 
     @available(iOS 14.0, *)
     @discardableResult
@@ -88,18 +95,6 @@ public extension UIButtonChainable {
         setTitle(title, for: state)
         return self
     }
-//    func title(_ publisher: Publisher<String?>, for state: UIControl.State) -> Self {
-//        publisher.addSubscriber {[weak self] text in
-//            self?.setTitle(text, for: state)
-//        }
-//        return self
-//    }
-//    func title(_ publisher: Publisher<String>, for state: UIControl.State) -> Self {
-//        publisher.addSubscriber {[weak self] text in
-//            self?.setTitle(text, for: state)
-//        }
-//        return self
-//    }
     
     @discardableResult
     func titleColor(_ color: UIColor?, for state: UIControl.State) -> Self {
@@ -118,36 +113,12 @@ public extension UIButtonChainable {
         setImage(image, for: state)
         return self
     }
-//    func image(_ publisher: Publisher<UIImage?>, for state: UIControl.State) -> Self {
-//        publisher.addSubscriber {[weak self] image in
-//            self?.setImage(image, for: state)
-//        }
-//        return self
-//    }
-//    func image(_ publisher: Publisher<UIImage>, for state: UIControl.State) -> Self {
-//        publisher.addSubscriber {[weak self] image in
-//            self?.setImage(image, for: state)
-//        }
-//        return self
-//    }
     
     @discardableResult
     func backgroundImage(_ image: UIImage?, for state: UIControl.State) -> Self {
         setBackgroundImage(image, for: state)
         return self
     }
-//    func backgroundImage(_ publisher: Publisher<UIImage?>, for state: UIControl.State) -> Self {
-//        publisher.addSubscriber {[weak self] image in
-//            self?.setBackgroundImage(image, for: state)
-//        }
-//        return self
-//    }
-//    func backgroundImage(_ publisher: Publisher<UIImage>, for state: UIControl.State) -> Self {
-//        publisher.addSubscriber {[weak self] image in
-//            self?.setBackgroundImage(image, for: state)
-//        }
-//        return self
-//    }
     
     @available(iOS 13.0, *)
     @discardableResult
@@ -159,13 +130,6 @@ public extension UIButtonChainable {
     @discardableResult
     func attributedTitle(_ title: NSAttributedString?, for state: UIControl.State) -> Self {
         setAttributedTitle(title, for: state)
-        return self
-    }
-    
-    @available(iOS 13.4, *)
-    @discardableResult
-    func pointerStyleProvider(_ newValue: UIButton.PointerStyleProvider?) -> Self {
-        pointerStyleProvider = newValue
         return self
     }
 }

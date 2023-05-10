@@ -63,19 +63,3 @@ public extension UIImageViewChainable {
         return self
     }
 }
-
-public extension UIImageViewChainable {
-    
-//    func image(_ publisher: Publisher<UIImage?>) -> Self {
-//        publisher.addSubscriber {[weak self] image in
-//            self?.image = image
-//        }
-//        return self
-//    }
-//    func image(_ publisher: Publisher<UIImage>) -> Self {
-//        publisher.addSubscriber {[weak self] image in
-//            self?.image = image
-//        }
-//        return self
-//    }
-}

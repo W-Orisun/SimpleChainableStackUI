@@ -86,13 +86,3 @@ public extension UISliderChainable {
         return self
     }
 }
-
-public extension UISliderChainable {
-    
-//    func value(_ publisher: Publisher<Float>) -> Self {
-//        publisher.addSubscriber {[weak self] value in
-//            self?.value = value
-//        }
-//        return self
-//    }
-}

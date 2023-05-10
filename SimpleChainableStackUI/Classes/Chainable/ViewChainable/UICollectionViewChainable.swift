@@ -142,25 +142,25 @@ public extension UICollectionViewChainable {
 public extension UICollectionViewChainable {
     
     @discardableResult
-    func register(_ cellClass: AnyClass?, forCellWithReuseIdentifier identifier: String) -> Self {
+    func registerClass(_ cellClass: AnyClass?, forCellWithReuseIdentifier identifier: String) -> Self {
         register(cellClass, forCellWithReuseIdentifier: identifier)
         return self
     }
     
     @discardableResult
-    func register(_ nib: UINib?, forCellWithReuseIdentifier identifier: String) -> Self {
+    func registerNib(_ nib: UINib?, forCellWithReuseIdentifier identifier: String) -> Self {
         register(nib, forCellWithReuseIdentifier: identifier)
         return self
     }
     
     @discardableResult
-    func register(_ viewClass: AnyClass?, forSupplementaryViewOfKind elementKind: String, withReuseIdentifier identifier: String) -> Self {
+    func registerClass(_ viewClass: AnyClass?, forSupplementaryViewOfKind elementKind: String, withReuseIdentifier identifier: String) -> Self {
         register(viewClass, forSupplementaryViewOfKind: elementKind, withReuseIdentifier: identifier)
         return self
     }
     
     @discardableResult
-    func register(_ nib: UINib?, forSupplementaryViewOfKind kind: String, withReuseIdentifier identifier: String) -> Self {
+    func registerNib(_ nib: UINib?, forSupplementaryViewOfKind kind: String, withReuseIdentifier identifier: String) -> Self {
         register(nib, forSupplementaryViewOfKind: kind, withReuseIdentifier: identifier)
         return self
     }

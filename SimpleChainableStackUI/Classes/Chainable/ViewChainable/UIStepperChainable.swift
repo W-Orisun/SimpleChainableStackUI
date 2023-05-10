@@ -77,14 +77,3 @@ public extension UIStepperChainable {
         return self
     }
 }
-
-public extension UIStepperChainable {
-    
-//    func value(_ publisher: Publisher<Double>) -> Self {
-//        publisher.addSubscriber {[weak self] value in
-//            self?.value = value
-//        }
-//        return self
-//    }
-    
-}

@@ -11,6 +11,9 @@ import SimpleChainableStackUI
 
 class TableViewController : UIViewController {
     
+    var count: Int = 0
+    @Observable var buttonTitle: String? = "title"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -46,10 +49,13 @@ extension TableViewController : UITableViewDelegate, UITableViewDataSource {
             cell.addSubview(button)
         }
         
-        button.title("\(indexPath.row)", for: .normal)
-        button.onTouchUpInside {
-            print("touchUpInside \(indexPath.row)")
-        }
+        button
+            .observableTitle($buttonTitle, for: .normal)
+            .onTouchUpInside { [unowned self] in
+                self.buttonTitle = "\(count)"
+                self.count += 1
+                print("touchUpInside \(indexPath.row)")
+            }
         return cell
     }
     

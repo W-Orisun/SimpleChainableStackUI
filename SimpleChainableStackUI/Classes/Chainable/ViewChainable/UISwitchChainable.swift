@@ -59,13 +59,3 @@ public extension UISwitchChainable {
         return self
     }
 }
-
-public extension UISwitchChainable {
-    
-//    func isOn(_ publisher: Publisher<Bool>) -> Self {
-//        publisher.addSubscriber {[weak self] status in
-//            self?.isOn = status
-//        }
-//        return self
-//    }
-}

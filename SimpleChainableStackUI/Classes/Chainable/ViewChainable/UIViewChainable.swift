@@ -265,12 +265,4 @@ public extension UIViewChainable {
         setContentCompressionResistancePriority(priority, for: axis)
         return self
     }
-    
-//    @discardableResult
-//    func isHidden(_ publisher: Publisher<Bool>) -> Self {
-//        publisher.addSubscriber {[weak self] isHidden in
-//            self?.isHidden = isHidden
-//        }
-//        return self
-//    }
 }

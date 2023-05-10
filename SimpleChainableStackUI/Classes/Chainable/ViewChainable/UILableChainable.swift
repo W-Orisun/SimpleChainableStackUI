@@ -124,31 +124,3 @@ public extension UILabelChainable {
         return self
     }
 }
-
-public extension UILabelChainable {
-    
-//    func text(_ publisher: Publisher<String?>) -> Self {
-//        publisher.addSubscriber {[weak self] text in
-//            self?.text = text
-//        }
-//        return self
-//    }
-//    func text(_ publisher: Publisher<String>) -> Self {
-//        publisher.addSubscriber {[weak self] text in
-//            self?.text = text
-//        }
-//        return self
-//    }
-//    func attributedText(_ publisher: Publisher<NSAttributedString?>) -> Self {
-//        publisher.addSubscriber {[weak self] text in
-//            self?.attributedText = text
-//        }
-//        return self
-//    }
-//    func attributedText(_ publisher: Publisher<NSAttributedString>) -> Self {
-//        publisher.addSubscriber {[weak self] text in
-//            self?.attributedText = text
-//        }
-//        return self
-//    }
-}
