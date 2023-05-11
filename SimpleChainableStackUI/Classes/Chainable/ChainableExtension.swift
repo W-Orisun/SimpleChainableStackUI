@@ -15,6 +15,7 @@ extension UIView : UIViewChainable, UIViewLayerChainable, UIViewGestureClosureCh
 extension UIControl : UIControlChainable {}
 extension UILabel : UILabelChainable {}
 extension UIButton : UIButtonChainable, UIButtonControlClosureChainable {}
+extension UIImageView : UIImageViewChainable {}
 extension UIStackView : UIStackViewChainable {}
 extension UIScrollView : UIScrollViewChainable {}
 extension UITableView : UITableViewChainable {}

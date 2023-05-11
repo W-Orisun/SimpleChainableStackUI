@@ -9,44 +9,10 @@
 import UIKit
 import SimpleChainableStackUI
 
-
-class MyView : UIView {
-    
-    var text: String?
-    
-    func a() {
-
-    }
-}
-
-func a() {
-    MyView()
-        .set(\.text, to: "Text")
-        .set(\.frame, to: .zero)
-}
-
-
-
-
-/*
- let label = UILabel()
-     .size(height: 28)
-     .assign(to: &titleLabel)
- */
-
-
 class ViewController: UIViewController {
     
-    @Observable var titleLabelHidden = false
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        let label = UILabel()
-            .observableHidden($titleLabelHidden)
-    }
-    
     var titleLabel: UILabel!
-    
+    @Observable var titleLabelHidden = false
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
