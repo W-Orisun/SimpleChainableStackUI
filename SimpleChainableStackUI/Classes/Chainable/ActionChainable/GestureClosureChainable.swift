@@ -16,6 +16,7 @@ public extension UIViewGestureClosureChainable {
     
     @discardableResult
     func onTapGesture(action: @escaping () -> ()) -> Self {
+        isUserInteractionEnabled = true
         let ac = AssociatedClosure(target: self, key: &tapGestureChainableKey, closure: action)
         
         gestureRecognizers?.removeAll { $0 is UITapGestureRecognizer }
@@ -25,6 +26,7 @@ public extension UIViewGestureClosureChainable {
     
     @discardableResult
     func onLongPressGesture(action: @escaping () -> ()) -> Self {
+        isUserInteractionEnabled = true
         let ac = AssociatedClosure(target: self, key: &longPressGestureChainableKey, closure: action)
         
         gestureRecognizers?.removeAll { $0 is UILongPressGestureRecognizer }
