@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
         
         let container = ViewContainer {
-            VStack {
+            UIVStack {
                 UILabel()
                     .text("SimpleChainableStackUI")
                     .font(UIFont.systemFont(ofSize: 20))
@@ -34,7 +34,7 @@ class ViewController: UIViewController {
                 Spacer()
                     .backgroundColor(UIColor.lightGray)
                     .bindHidden(to: titleLabel)
-                HStack(distribution: .fillEqually) {
+                UIHStack(distribution: .fillEqually) {
                     for text in ["simple", "chainable", "stack"] {
                         UILabel().text(text).textAlignment(.center)
                     }

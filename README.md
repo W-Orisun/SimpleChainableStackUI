@@ -73,7 +73,7 @@ UISwitch()
 
 ## Stack
 
-- VStack and HStack
+- UIVStack and UIHStack
 - ForIn
 - If Statement
 - ViewContainer
@@ -83,14 +83,14 @@ UISwitch()
 let label: UILabel!
 
 let container = ViewContainer {
-    VStack {
+    UIVStack {
         UILabel()
             .text("Text")
             .size(height: 28)
             .assign(to: &label)
         Spacer()
             .bindHidden(to: label)
-        HStack(distribution: .fillEqually) {
+        UIHStack(distribution: .fillEqually) {
             for text in ["A", "B", "C"] {
                 UILabel().text(text)
             }

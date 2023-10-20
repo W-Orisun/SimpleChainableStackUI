@@ -7,7 +7,7 @@
 
 import UIKit
 
-open class HStack : UIStackView {
+open class UIHStack : UIStackView {
     
     public convenience init(distribution: UIStackView.Distribution = .fill, alignment: UIStackView.Alignment = .fill, spacing: CGFloat = 0, @ViewArrayBuilder views: () -> [UIView]) {
         let subviews = views()
@@ -26,7 +26,7 @@ open class HStack : UIStackView {
     }
 }
 
-open class VStack : UIStackView {
+open class UIVStack : UIStackView {
     
     public convenience init(distribution: UIStackView.Distribution = .fill, alignment: UIStackView.Alignment = .fill, spacing: CGFloat = 0, @ViewArrayBuilder views: () -> [UIView]) {
         let subviews = views()
