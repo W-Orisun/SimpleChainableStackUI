@@ -10,7 +10,7 @@ import UIKit
 public extension UIViewChainable {
     
     @discardableResult
-    func observableHidden(_ wrapper: ObservableWrapper<Bool>) -> Self {
+    func observableHidden(_ wrapper: CSObservableWrapper<Bool>) -> Self {
         wrapper.addObserveClosure { [weak self] isHidden in
             self?.isHidden = isHidden
         }
@@ -22,7 +22,7 @@ public extension UIViewChainable {
 public extension UILabelChainable {
     
     @discardableResult
-    func observableText(_ wrapper: ObservableWrapper<String?>) -> Self {
+    func observableText(_ wrapper: CSObservableWrapper<String?>) -> Self {
         wrapper.addObserveClosure { [weak self] text in
             self?.text = text
         }
@@ -30,7 +30,7 @@ public extension UILabelChainable {
     }
     
     @discardableResult
-    func observableAttributedText(_ wrapper: ObservableWrapper<NSAttributedString?>) -> Self {
+    func observableAttributedText(_ wrapper: CSObservableWrapper<NSAttributedString?>) -> Self {
         wrapper.addObserveClosure { [weak self] attributedText in
             self?.attributedText = attributedText
         }
@@ -42,7 +42,7 @@ public extension UILabelChainable {
 public extension UIButtonChainable {
     
     @discardableResult
-    func observableTitle(_ wrapper: ObservableWrapper<String?>, for state: UIControl.State) -> Self {
+    func observableTitle(_ wrapper: CSObservableWrapper<String?>, for state: UIControl.State) -> Self {
         wrapper.addObserveClosure { [weak self] title in
             self?.setTitle(title, for: state)
         }
@@ -50,7 +50,7 @@ public extension UIButtonChainable {
     }
     
     @discardableResult
-    func observableImage(_ wrapper: ObservableWrapper<UIImage?>, for state: UIControl.State) -> Self {
+    func observableImage(_ wrapper: CSObservableWrapper<UIImage?>, for state: UIControl.State) -> Self {
         wrapper.addObserveClosure { [weak self] image in
             self?.setImage(image, for: state)
         }
@@ -58,7 +58,7 @@ public extension UIButtonChainable {
     }
     
     @discardableResult
-    func observableBackgroundImage(_ wrapper: ObservableWrapper<UIImage?>, for state: UIControl.State) -> Self {
+    func observableBackgroundImage(_ wrapper: CSObservableWrapper<UIImage?>, for state: UIControl.State) -> Self {
         wrapper.addObserveClosure { [weak self] image in
             self?.setBackgroundImage(image, for: state)
         }
@@ -70,7 +70,7 @@ public extension UIButtonChainable {
 public extension UIImageViewChainable {
     
     @discardableResult
-    func observableImage(_ wrapper: ObservableWrapper<UIImage?>) -> Self {
+    func observableImage(_ wrapper: CSObservableWrapper<UIImage?>) -> Self {
         wrapper.addObserveClosure { [weak self] image in
             self?.image = image
         }
@@ -82,7 +82,7 @@ public extension UIImageViewChainable {
 public extension UITextFieldChainable {
     
     @discardableResult
-    func observableText(_ wrapper: ObservableWrapper<String?>) -> Self {
+    func observableText(_ wrapper: CSObservableWrapper<String?>) -> Self {
         wrapper.addObserveClosure { [weak self] text in
             self?.text = text
         }
@@ -90,7 +90,7 @@ public extension UITextFieldChainable {
     }
     
     @discardableResult
-    func observableAttributedText(_ wrapper: ObservableWrapper<NSAttributedString?>) -> Self {
+    func observableAttributedText(_ wrapper: CSObservableWrapper<NSAttributedString?>) -> Self {
         wrapper.addObserveClosure { [weak self] attributedText in
             self?.attributedText = attributedText
         }
@@ -98,7 +98,7 @@ public extension UITextFieldChainable {
     }
     
     @discardableResult
-    func observablePlaceholder(_ wrapper: ObservableWrapper<String?>) -> Self {
+    func observablePlaceholder(_ wrapper: CSObservableWrapper<String?>) -> Self {
         wrapper.addObserveClosure { [weak self] placeholder in
             self?.placeholder = placeholder
         }
@@ -106,7 +106,7 @@ public extension UITextFieldChainable {
     }
     
     @discardableResult
-    func observableAttributedPlaceholder(_ wrapper: ObservableWrapper<NSAttributedString?>) -> Self {
+    func observableAttributedPlaceholder(_ wrapper: CSObservableWrapper<NSAttributedString?>) -> Self {
         wrapper.addObserveClosure { [weak self] attributedPlaceholder in
             self?.attributedPlaceholder = attributedPlaceholder
         }
@@ -118,7 +118,7 @@ public extension UITextFieldChainable {
 public extension UISwitchChainable {
     
     @discardableResult
-    func observableOn(_ wrapper: ObservableWrapper<Bool>) -> Self {
+    func observableOn(_ wrapper: CSObservableWrapper<Bool>) -> Self {
         wrapper.addObserveClosure { [weak self] isOn in
             self?.isOn = isOn
         }
@@ -130,7 +130,7 @@ public extension UISwitchChainable {
 public extension UIPageControlChainable {
     
     @discardableResult
-    func observableCurrentPage(_ wrapper: ObservableWrapper<Int>) -> Self {
+    func observableCurrentPage(_ wrapper: CSObservableWrapper<Int>) -> Self {
         wrapper.addObserveClosure { [weak self] currentPage in
             self?.currentPage = currentPage
         }
@@ -142,7 +142,7 @@ public extension UIPageControlChainable {
 public extension UISliderChainable {
     
     @discardableResult
-    func observableValue(_ wrapper: ObservableWrapper<Float>) -> Self {
+    func observableValue(_ wrapper: CSObservableWrapper<Float>) -> Self {
         wrapper.addObserveClosure { [weak self] value in
             self?.value = value
         }
@@ -154,7 +154,7 @@ public extension UISliderChainable {
 public extension UIStepperChainable {
     
     @discardableResult
-    func observableValue(_ wrapper: ObservableWrapper<Double>) -> Self {
+    func observableValue(_ wrapper: CSObservableWrapper<Double>) -> Self {
         wrapper.addObserveClosure { [weak self] value in
             self?.value = value
         }

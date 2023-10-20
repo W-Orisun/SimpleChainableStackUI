@@ -12,7 +12,7 @@ import SimpleChainableStackUI
 class ViewController: UIViewController {
     
     var titleLabel: UILabel!
-    @Observable var titleLabelHidden = false
+    @CSObservable var titleLabelHidden = false
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)

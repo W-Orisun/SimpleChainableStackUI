@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		45A946F880EB2ABFB75D99D5 /* Pods_SimpleChainableStackUI_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F874178221138E2AEAA16F84 /* Pods_SimpleChainableStackUI_Example.framework */; };
-		5E7A51012A0B90F000F2D05A /* AAA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A51002A0B90F000F2D05A /* AAA.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -19,7 +18,6 @@
 /* Begin PBXFileReference section */
 		1B6FC1EC22EDC025002A27D9 /* Pods-SimpleChainableStackUI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleChainableStackUI_Example.release.xcconfig"; path = "Target Support Files/Pods-SimpleChainableStackUI_Example/Pods-SimpleChainableStackUI_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5C88CB4C09D2484F7A066F3A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		5E7A51002A0B90F000F2D05A /* AAA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAA.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SimpleChainableStackUI_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleChainableStackUI_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,7 +79,6 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
-				5E7A51002A0B90F000F2D05A /* AAA.swift */,
 			);
 			name = "Example for SimpleChainableStackUI";
 			path = SimpleChainableStackUI;
@@ -233,7 +230,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				5E7A51012A0B90F000F2D05A /* AAA.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

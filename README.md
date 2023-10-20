@@ -32,13 +32,13 @@ MyView()
 
 ### Observable
 
-Use `@Observable` and `$`.
+Use `@CSObservable` and `$`.
 
 ```swift
 class MyViewController : UIViewController {
     
-    @Observable var buttonTitle: String? = "Text"
-    @Observable var buttonHidden = false
+    @CSObservable var buttonTitle: String? = "Text"
+    @CSObservable var buttonHidden = false
     
     override func viewDidLoad() {
         super.viewDidLoad()

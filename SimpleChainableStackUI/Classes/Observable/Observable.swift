@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class ObservableWrapper<T> {
+public class CSObservableWrapper<T> {
     
     public var value: T? {
         didSet {
@@ -29,11 +29,11 @@ public class ObservableWrapper<T> {
 
 
 @propertyWrapper
-public struct Observable<T> {
+public struct CSObservable<T> {
     
-    private let wrapper = ObservableWrapper<T>()
+    private let wrapper = CSObservableWrapper<T>()
     
-    public var projectedValue: ObservableWrapper<T> { wrapper }
+    public var projectedValue: CSObservableWrapper<T> { wrapper }
     public var wrappedValue: T {
         didSet {
             wrapper.value = wrappedValue
