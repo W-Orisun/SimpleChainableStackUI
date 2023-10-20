@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name             = 'SimpleChainableStackUI'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'Simple Chainable StackUI.'
   s.homepage         = 'https://github.com/GraveParty/SimpleChainableStackUI'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
